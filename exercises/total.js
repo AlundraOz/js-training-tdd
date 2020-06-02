@@ -7,7 +7,10 @@
  */
 
 // Your code:
-
+function total(arr) {
+    if(!Array.isArray(arr)) return;
+    return arr.reduce((a, v)=>a + v);
+}
 //* Begin of tests
 const assert = require('assert');
 
